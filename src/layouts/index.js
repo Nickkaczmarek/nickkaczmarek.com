@@ -27,7 +27,7 @@ const Header = () => (
             textDecoration: 'none',
           }}
         >
-          Gatsby
+          Nick Kaczmarek's Personal Website
         </Link>
       </h1>
     </div>
@@ -37,10 +37,10 @@ const Header = () => (
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="nickkaczmarek.gitlab.io"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Nick Kaczmarek\'s Personal Website' },
+        { name: 'keywords', content: 'Nick Kaczmarek' },
       ]}
     />
     <Header />
