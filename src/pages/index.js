@@ -1,12 +1,12 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React, { Fragment } from "react";
+import Link from "gatsby-link";
 
 const IndexPage = () => (
   <div>
-    <h1>Howdy doody</h1>
-    <p>What the fuck is up?</p>
-    <Link to="/about/">Go to page 2</Link>
+    <h1>Hi, I'm Nick Kaczmarek</h1>
+    <p>I build things for the web and anything else I can.</p>
+    <Link to="/about/">About</Link>
   </div>
-)
+);
 
-export default IndexPage
+export default IndexPage;
