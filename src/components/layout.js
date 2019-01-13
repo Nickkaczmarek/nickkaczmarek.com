@@ -24,8 +24,9 @@ const Layout = ({ children }) => (
             margin: `0 auto`,
             maxWidth: 960,
             padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0,
-          }}>
+            paddingTop: 0
+          }}
+        >
           {children}
         </main>
         <footer style={{ position: "absolute", bottom: 0, right: 0 }}>
@@ -39,7 +40,7 @@ const Layout = ({ children }) => (
 );
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 };
 
 export default Layout;

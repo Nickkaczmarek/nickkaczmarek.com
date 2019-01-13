@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Nick Kaczmarek <nick.s.kaczmarek@gmail.com>",
   "scripts": {
+    "prebuild": "npm run format",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "npm run develop",

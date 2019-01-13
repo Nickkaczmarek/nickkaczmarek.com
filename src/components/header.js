@@ -13,8 +13,9 @@ const Header = ({ siteTitle }) => (
     style={{
       background: "seagreen",
       marginBottom: "1.45rem",
-      padding: "1.45rem 1.0875rem",
-    }}>
+      padding: "1.45rem 1.0875rem"
+    }}
+  >
     <nav>
       <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
         <h1 style={{ display: `inline` }}>{siteTitle}</h1>
@@ -28,11 +29,11 @@ const Header = ({ siteTitle }) => (
 );
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
+  siteTitle: PropTypes.string
 };
 
 Header.defaultProps = {
-  siteTitle: ``,
+  siteTitle: ``
 };
 
 export default Header;
