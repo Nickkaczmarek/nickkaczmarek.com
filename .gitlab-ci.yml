@@ -4,8 +4,8 @@ pages:
   script:
   - npm install
   - npm install gatsby-cli
-  - mkdir -p ./public/.well-known/acme-challenge/58gNzwSpybhMrNMgezb9BBPuHqvuaCzWAtXkqIBFUPo
-  - cp .well-known/acme-challenge/58gNzwSpybhMrNMgezb9BBPuHqvuaCzWAtXkqIBFUPo/index.html ./public/.well-known/acme-challenge/58gNzwSpybhMrNMgezb9BBPuHqvuaCzWAtXkqIBFUPo/index.html
+  # - mkdir -p ./public/.well-known/acme-challenge/58gNzwSpybhMrNMgezb9BBPuHqvuaCzWAtXkqIBFUPo
+  # - cp .well-known/acme-challenge/58gNzwSpybhMrNMgezb9BBPuHqvuaCzWAtXkqIBFUPo/index.html ./public/.well-known/acme-challenge/58gNzwSpybhMrNMgezb9BBPuHqvuaCzWAtXkqIBFUPo/index.html
   - node_modules/.bin/gatsby build --prefix-paths
   artifacts:
     paths:
