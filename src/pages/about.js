@@ -1,12 +1,10 @@
-import React, { Fragment } from "react";
-import Link from "gatsby-link";
+import React from "react";
+import Layout from "../components/layout.js";
 
-const SecondPage = () => (
-  <div>
+
+export default () => (
+  <Layout>
     <h1>About Nick Kaczmarek</h1>
-    <p>I live in the United States with my wife and dog.</p>
-    <Link to="/">Home</Link>
-  </div>
+    <h3>I live in the United States with my wife and dog.</h3>
+  </Layout>
 );
-
-export default SecondPage;

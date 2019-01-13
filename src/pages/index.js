@@ -1,12 +1,9 @@
-import React, { Fragment } from "react";
-import Link from "gatsby-link";
+import React from "react";
+import Layout from "../components/layout.js";
 
-const IndexPage = () => (
-  <div>
+export default () => (
+  <Layout>
     <h1>Hi, I'm Nick Kaczmarek</h1>
-    <p>I build things for the web and anything else I can.</p>
-    <Link to="/about/">About</Link>
-  </div>
+    <h3>I build things for the web and anything else I can.</h3>
+  </Layout>
 );
-
-export default IndexPage;
