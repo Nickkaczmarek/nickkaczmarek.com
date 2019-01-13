@@ -1,7 +1,8 @@
 module.exports = {
-  pathPrefix: `/gatsby`,
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `nickkaczmarek.com`,
+    description: `Welcome to nickkaczmarek.com, the personal website of Nick Kaczmarek.`,
+    author: `@nickkacz`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -23,7 +24,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        // icon: `src/images/favicon.ico`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-typography`,

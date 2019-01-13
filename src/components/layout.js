@@ -1,49 +1,45 @@
 import React from "react";
-import { Link } from "gatsby";
-import Helmet from "react-helmet";
+import PropTypes from "prop-types";
+import { StaticQuery, graphql } from "gatsby";
 
-import "./index.css";
-import favicon from "../images/favicon.ico";
+import Header from "./header";
+import "./layout.css";
 
-const ListLink = props => (
-  <li style={{ display: `inline-block`, marginRight: `1rem` }}>
-    <Link to={props.to}>{props.children}</Link>
-  </li>
+const Layout = ({ children }) => (
+  <StaticQuery
+    query={graphql`
+      query SiteTitleQuery {
+        site {
+          siteMetadata {
+            title
+          }
+        }
+      }
+    `}
+    render={data => (
+      <>
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <main
+          style={{
+            margin: `0 auto`,
+            maxWidth: 960,
+            padding: `0px 1.0875rem 1.45rem`,
+            paddingTop: 0,
+          }}>
+          {children}
+        </main>
+        <footer style={{ position: "absolute", bottom: 0, right: 0 }}>
+          © {new Date().getFullYear()}, Built with
+          {` `}
+          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        </footer>
+      </>
+    )}
+  />
 );
 
-export default ({ children }) => (
-  <main>
-    <Helmet
-      title="Nick Kaczmarek"
-      meta={[
-        { name: "description", content: "Nick Kaczmarek" },
-        { name: "keywords", content: "Nick Kaczmarek" },
-      ]}
-      link={[
-        { rel: "shortcut icon", type: "image/x-icon", href: `${favicon}` },
-      ]}
-    />
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
-    <header
-      style={{
-        background: "seagreen",
-        marginBottom: "1.45rem",
-        padding: "0.45rem 1.0875rem",
-      }}>
-      <nav>
-        <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
-          <h3 style={{ display: `inline` }}>nickkaczmarek.com</h3>
-        </Link>
-        <ul style={{ listStyle: `none`, float: `right` }}>
-          <ListLink to="/">Home</ListLink>
-          <ListLink to="/about/">About</ListLink>
-          {/* <ListLink to="/contact/">Contact</ListLink> */}
-        </ul>
-      </nav>
-    </header>
-    <section
-      style={{ margin: `0 auto`, maxWidth: 650, padding: `1.25rem 1rem` }}>
-      {children}
-    </section>
-  </main>
-);
+export default Layout;

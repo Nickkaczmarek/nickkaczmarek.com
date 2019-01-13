@@ -3,6 +3,13 @@
   "description": "nickkaczmarek.com",
   "version": "1.0.0",
   "author": "Nick Kaczmarek <nick.s.kaczmarek@gmail.com>",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "format": "prettier --write \"src/**/*.js\"",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+  },
   "dependencies": {
     "gatsby": "^2.0.76",
     "gatsby-image": "^2.0.20",
@@ -23,16 +30,12 @@
   "devDependencies": {
     "prettier": "^1.15.2"
   },
-  "keywords": [
-    "gatsby"
-  ],
   "license": "MIT",
-  "main": "n/a",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
-    "format": "prettier --write \"src/**/*.js\"",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/nickkaczmarek/nickkaczmarek.gitlab.io.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/nickkaczmarek/nickkaczmarek.gitlab.io/issues"
   }
 }
