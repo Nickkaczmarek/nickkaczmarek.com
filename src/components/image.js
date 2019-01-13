@@ -1,5 +1,6 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
+// import { rhythm } from "../utils/typography"
 import Img from "gatsby-image";
 
 /*
@@ -17,9 +18,9 @@ const Image = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "erica_and_i.png" }) {
+        placeholderImage: file(relativePath: { eq: "nick.png" }) {
           childImageSharp {
-            fluid(maxWidth: 900) {
+            fluid(maxWidth: 300, maxHeight: 650) {
               ...GatsbyImageSharpFluid
             }
           }

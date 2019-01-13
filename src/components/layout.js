@@ -3,7 +3,8 @@ import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 
 import Header from "./header";
-import "./layout.css";
+import { css } from "@emotion/core";
+import { rhythm } from "../utils/typography";
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -18,22 +19,21 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
         <main
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0
-          }}
+          css={css`
+            margin: 0 auto;
+            max-width: 900px;
+            padding: 0 ${rhythm(2)};
+          `}
         >
+          <Header siteTitle={data.site.siteMetadata.title} />
           {children}
         </main>
-        <footer style={{ position: "absolute", bottom: 0, right: 0 }}>
+        {/* <footer style={{ position: "relative", bottom: 0, left: 0 }}>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        </footer> */}
       </>
     )}
   />
