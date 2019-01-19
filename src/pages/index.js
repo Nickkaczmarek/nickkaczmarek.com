@@ -24,8 +24,9 @@ const IndexPage = () => (
       css={css`
         @media (min-width: 650px) {
           float: right;
-          width: 50%;
+          width: 65%;
           margin-left: 5%;
+          text-align: right;
         }
       `}
     >
@@ -38,16 +39,7 @@ const IndexPage = () => (
         and I really enjoy what I do.
       </p>
     </div>
-    <div
-      css={css`
-        width: 250px;
-        @media (max-width: 450px) {
-          width: 65vw;
-        }
-      `}
-    >
-      <Image />
-    </div>
+    <Image />
   </Layout>
 );
 

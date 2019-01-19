@@ -19,21 +19,20 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
+        <Header siteTitle={data.site.siteMetadata.title} />
         <main
           css={css`
             margin: 0 auto;
-            max-width: 900px;
+            max-width: 1200px;
             padding: 0 ${rhythm(2)};
+            @media (max-width: 576px) {
+              margin: 0;
+              padding: 0 10vw;
+            }
           `}
         >
-          <Header siteTitle={data.site.siteMetadata.title} />
           {children}
         </main>
-        {/* <footer style={{ position: "relative", bottom: 0, left: 0 }}>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer> */}
       </>
     )}
   />
