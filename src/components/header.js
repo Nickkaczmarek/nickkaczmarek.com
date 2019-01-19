@@ -57,7 +57,7 @@ const StyledHeader = styled.header`
 `;
 
 function ToggleMenu() {
-  const navbar = document.querySelector("[class*=StyledNav]");
+  const navbar = document.querySelector("nav");
   if (navbar.style.display === "block") {
     navbar.style.display = "none";
     navbar.style.marginTop = "0";
