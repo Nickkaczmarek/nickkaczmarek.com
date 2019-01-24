@@ -27,7 +27,12 @@ const Image = () => (
         }
       }
     `}
-    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
+    render={data => (
+      <Img
+        alt={`Self portrait of Nick Kaczmarek`}
+        fluid={data.placeholderImage.childImageSharp.fluid}
+      />
+    )}
   />
 );
 export default Image;
