@@ -1,7 +1,9 @@
-image: node:6.10.0
+image: node:alpine
 
 pages:
   script:
+    - yarn config set cache-folder .yarn
+    - yarn global add node-gyp
     - yarn install
     - yarn add gatsby-cli
     - mkdir -p ./public/.well-known/acme-challenge/58gNzwSpybhMrNMgezb9BBPuHqvuaCzWAtXkqIBFUPo
@@ -13,5 +15,6 @@ pages:
   cache:
     paths:
       - node_modules
+      - .yarn
   only:
     - master
