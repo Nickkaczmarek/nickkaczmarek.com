@@ -2,12 +2,11 @@ image: node:alpine
 
 pages:
   script:
-    - yarn config set cache-folder .yarn
     - yarn global add node-gyp
     - yarn install
     - yarn add gatsby-cli
-    - mkdir -p ./public/.well-known/acme-challenge/58gNzwSpybhMrNMgezb9BBPuHqvuaCzWAtXkqIBFUPo
-    - cp .well-known/acme-challenge/58gNzwSpybhMrNMgezb9BBPuHqvuaCzWAtXkqIBFUPo/index.html ./public/.well-known/acme-challenge/58gNzwSpybhMrNMgezb9BBPuHqvuaCzWAtXkqIBFUPo/index.html
+    - mkdir -p ./public/.well-known/acme-challenge/k6qOdz5Ptu_bQTmrk2jbtkW8uKoAK5cow2diNuIyjQI
+    - cp .well-known/acme-challenge/k6qOdz5Ptu_bQTmrk2jbtkW8uKoAK5cow2diNuIyjQI/index.html ./public/.well-known/acme-challenge/k6qOdz5Ptu_bQTmrk2jbtkW8uKoAK5cow2diNuIyjQI/index.html
     - node_modules/.bin/gatsby build --prefix-paths
   artifacts:
     paths:
@@ -15,6 +14,5 @@ pages:
   cache:
     paths:
       - node_modules
-      - .yarn
   only:
     - master
