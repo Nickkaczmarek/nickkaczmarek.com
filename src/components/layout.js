@@ -6,6 +6,8 @@ import Header from "./header";
 import { css } from "@emotion/core";
 import { rhythm } from "../utils/typography";
 
+import "../styles/index.css";
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -17,7 +19,7 @@ const Layout = ({ children }) => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
         <main
@@ -39,7 +41,7 @@ const Layout = ({ children }) => (
 );
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default Layout;
