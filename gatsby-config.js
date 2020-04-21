@@ -109,7 +109,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Nick Kaczmarek's RSS Feed",
+            title: "Nick Kaczmarek",
           },
         ],
       },
