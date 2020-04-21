@@ -38,6 +38,7 @@
     "typography-theme-kirkham": "^0.16.18"
   },
   "devDependencies": {
+    "gatsby-plugin-feed": "^2.4.3",
     "gatsby-remark-images": "^3.2.4",
     "prettier": "^1.15.2"
   },
