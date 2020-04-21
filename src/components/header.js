@@ -43,18 +43,18 @@ const Header = ({ siteTitle }) => (
     <StyledNav>
       <StyledLink to={"/"}>{siteTitle}</StyledLink>
       <RightNav>
-        <StyledLink to={"archive"}>Posts</StyledLink>
+        <StyledLink to={"rss.xml"}>rss</StyledLink>
       </RightNav>
     </StyledNav>
   </StyledHeader>
 );
 
 Header.propTypes = {
-  siteTitle: PropTypes.string
+  siteTitle: PropTypes.string,
 };
 
 Header.defaultProps = {
-  siteTitle: ``
+  siteTitle: ``,
 };
 
 export default Header;
