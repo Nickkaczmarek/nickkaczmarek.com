@@ -10,7 +10,7 @@ export default ({ data }) => {
   const disqusShortname = "nickkaczmarek-com";
   const disqusConfig = {
     identifier: post.id,
-    title: post.frontmatter.title,
+    title: post.frontmatter.title
   };
   return (
     <Layout>

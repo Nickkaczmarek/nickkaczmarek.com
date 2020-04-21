@@ -19,7 +19,7 @@ const Layout = ({ children }) => (
         }
       }
     `}
-    render={(data) => (
+    render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
         <main
@@ -41,7 +41,7 @@ const Layout = ({ children }) => (
 );
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 };
 
 export default Layout;
