@@ -48,10 +48,23 @@ header {
   color: blue;
 }
 
+@media (max-width: 850px) {
+  body {
+    margin: 0 5vw;
+    /* padding: 3vw; */
+  }
+}
+
 @media (max-width: 576px) {
   body {
     margin: 0;
     padding: 10vw;
+  }
+  .nav-outer-container {
+    flex-wrap: wrap;
+  }
+  .nav-inner-container {
+    margin-left: 0;
   }
 }
 
