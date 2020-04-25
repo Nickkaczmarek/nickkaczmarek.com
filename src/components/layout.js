@@ -1,12 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { StaticQuery, graphql } from "gatsby";
-
-import Header from "./header";
-import { css } from "@emotion/core";
-import { rhythm } from "../utils/typography";
-
-import "../styles/index.css";
+import { StaticQuery, graphql, Link } from "gatsby";
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -21,20 +15,16 @@ const Layout = ({ children }) => (
     `}
     render={(data) => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <main
-          css={css`
-            margin: 0 auto;
-            max-width: 1200px;
-            padding: 0 ${rhythm(2)};
-            @media (max-width: 576px) {
-              margin: 0;
-              padding: 0 10vw;
-            }
-          `}
-        >
-          {children}
-        </main>
+        <header>
+          <nav className="nav-outer-container">
+            <Link to={"/"}>{data.site.siteMetadata.title}</Link>
+            <nav className="nav-inner-container">
+              <Link to={"/archive"}>{"archive"}</Link>
+              <a href={"rss.xml"}>rss</a>
+            </nav>
+          </nav>
+        </header>
+        <main>{children}</main>
       </>
     )}
   />
