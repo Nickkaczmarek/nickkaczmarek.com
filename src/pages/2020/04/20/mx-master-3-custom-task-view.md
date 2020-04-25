@@ -3,7 +3,7 @@ title: "Mx Master 3 Customize Gesture Button to use Task View"
 date: "2020-04-20"
 ---
 
-So a little background. I recently purchased a [Logitech MX Master 3](<[https://www.logitech.com/en-us/product/mx-master-3](https://www.logitech.com/en-us/product/mx-master-3)>) (and an [MX Keys](<[https://www.logitech.com/en-us/product/mx-keys-wireless-keyboard](https://www.logitech.com/en-us/product/mx-keys-wireless-keyboard)>), but we'll save that for later) and I really love it.
+So a little background. I recently purchased a [Logitech MX Master 3](https://www.logitech.com/en-us/product/mx-master-3) (and an [MX Keys](https://www.logitech.com/en-us/product/mx-keys-wireless-keyboard), but we'll save that for later) and I really love it.
 To be fair though, I have had the original [MX Master](https://www.logitech.com/en-ch/product/mx-master-business) for like 3 years now.
 They are incredible products and I will probably keep purchasing them as they are released.
 
@@ -11,7 +11,7 @@ Back to what I started this post for! I have the MX Master and something special
 
 ![Logitech Options showing MX Master 3](../../../../images/mx-master-3-custom-task-view/logitech-options-home.png)
 
-I believe to do any of the above, you'll need to install the [Logitech Options](<[https://www.logitech.com/en-us/product/options](https://www.logitech.com/en-us/product/options)>) app. I've used it on macOS and windows 10 and have no complaints. This setup is all related to my work setup in windows, though I imagine you can do something similar in macOS.
+I believe to do any of the above, you'll need to install the [Logitech Options](https://www.logitech.com/en-us/product/options) app. I've used it on macOS and windows 10 and have no complaints. This setup is all related to my work setup in windows, though I imagine you can do something similar in macOS.
 
 ![Logitech Options showing gesture button highlighted](../../../../images/mx-master-3-custom-task-view/logitech-options-gesture-button.png)
 
